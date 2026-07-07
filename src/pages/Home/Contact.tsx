@@ -57,8 +57,8 @@ export const Contact = () => {
             <Phone className="w-6 h-6 text-green-500 mt-1" />
             <div>
               <h3 className="font-semibold text-lg mb-1">Phone</h3>
-              <p>+255 743 490 182 (General)</p>
-              <p>+255 743 490 182 (Emergency)</p>
+              <p>+255 620 490 076 (General)</p>
+              <p>+255 787 079 502 (Emergency)</p>
             </div>
           </motion.div>
 
