@@ -13,7 +13,7 @@ app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json());
 app.use(morgan("dev"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/afya_connect")
+mongoose.connect("mongodb+srv://stanytz953_db_user:r7xwx3sY42uf1dfV@cluster0.qr4vi4m.mongodb.net/?appName=Cluster0")
   .then(() => console.log("Connected to MongoDB"))
   .catch(err => console.error("MongoDB connection error:", err));
 
