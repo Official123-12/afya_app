@@ -2,7 +2,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
 } from "react-router-dom";
 
 import { Layout } from "./components/Layout";
@@ -33,15 +32,14 @@ const App = () => {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Landing/>} />
+          <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route path="/auth" element={<AuthForm setUser={() => {}} />} />
 
-
-     {/* protected routes */}
-           <Route
+          {/* protected routes */}
+          <Route
             path="/dashboard"
             element={
               <ProtectedRoutes>
@@ -52,8 +50,7 @@ const App = () => {
             <Route index element={<DashboardHome />} />
             <Route path="services/general" element={<GeneralService />} />
             <Route path="services/specialist" element={<SpecialistService />} />
-            <Route path="profile" element={<UserProfile/>}/>
-            
+            <Route path="profile" element={<UserProfile />} />
             <Route
               path="services/mental-health"
               element={<MentalHealthService />}
@@ -61,12 +58,12 @@ const App = () => {
             <Route path="doctors" element={<Doctors />} />
             <Route path="book-appointment" element={<BookAppointment />} />
             <Route path="blog" element={<Blog />} />
-            <Route path="not-found" element={<NotFound/>}/>
+            <Route path="not-found" element={<NotFound />} />
           </Route>
         </Routes>
       </Layout>
-    
     </Router>
   );
 };
+
 export default App;
